@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Attendance - Sri Lanka FinTech Summit 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            padding: 35px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+
+        .header p {
+            color: #b8d4e8;
+            font-size: 13px;
+            margin: 8px 0 0 0;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 35px 40px;
+        }
+
+        .intro {
+            color: #555555;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #1e3a5f;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333333;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            font-family: inherit;
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #2d5a87;
+            box-shadow: 0 0 0 3px rgba(45, 90, 135, 0.1);
+        }
+
+        input::placeholder {
+            color: #9ca3af;
+        }
+
+        select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            padding-right: 40px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #2d5a87 0%, #1e3a5f 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(45, 90, 135, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px rgba(45, 90, 135, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            padding: 25px 40px;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #888888;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .event-info {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2d5a87;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .event-info p {
+            color: #1e3a5f;
+            font-size: 13px;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Sri Lanka FinTech Summit 2026</h1>
+            <p>CONFIRM YOUR ATTENDANCE</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="event-info">
+                <p>📅 16–17 September 2026 &nbsp;|&nbsp; 📍 BMICH, Colombo</p>
+            </div>
+
+            <p class="intro">
+                Please complete the form below to confirm your attendance. All fields are required.
+            </p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employeeId">Employee ID</label>
+                    <input type="text" id="employeeId" name="employeeId" placeholder="Enter your employee ID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="retail-banking">Retail Banking</option>
+                        <option value="corporate-banking">Corporate Banking</option>
+                        <option value="investment-banking">Investment Banking</option>
+                        <option value="it-technology">IT & Technology</option>
+                        <option value="risk-compliance">Risk & Compliance</option>
+                        <option value="operations">Operations</option>
+                        <option value="finance">Finance</option>
+                        <option value="hr">Human Resources</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="legal">Legal</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="designation">Current Designation</label>
+                    <input type="text" id="designation" name="designation" placeholder="Enter your current designation"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employeeId">Personal Email</label>
+                    <input type="text" id="employeeId" name="employeeId" placeholder="Enter your personal email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employeeId">Personal phone number</label>
+                    <input type="text" id="employeeId" name="employeeId" placeholder="Enter your personal phone number"
+                        required>
+                </div>
+
+                <button type="submit" class="submit-btn">Confirm Attendance</button>
+            </form>
+        </div>
+
+        <!-- Footer 
+        <div class="footer">
+            <p>For assistance, contact support at +94-XXX-XXXXXXX</p>
+        </div>-->
+    </div>
+</body>
+
+</html>
